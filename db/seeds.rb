@@ -48,3 +48,11 @@ puts "8 portfolio(s) item(s) created"
 end
 
 puts "1 portfolio(s) item(s) created"
+
+3. times do |technology|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{technology}"
+	)
+end
+
+puts "3 technologies created"
