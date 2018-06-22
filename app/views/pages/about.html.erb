@@ -5,6 +5,22 @@
 		<div class="row">
 			<div class="col-md-5">
 				<%= image_tag "cap_logo.png", width: 300, alt: "Profile Image" %>
+				<div class="skills">
+					<% @skills.each do |skill| %>
+						<div class="skill">
+							<h4><%= skill.title %></h4>
+							<div class="progress">
+								<div 
+								class="progress-bar progress-bar-striped bg-success"
+								role="progressbar"
+								aria-valuenow="<%= skill.percent_utilized %>"
+								aria-valuemax="100"
+								style="width: <%= skill.percent_utilized %>%"
+								></div>
+							</div>
+						</div>
+					<% end %>
+				</div>
 			</div>
 			<div class="col-md-7">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est velit, placerat eu augue sit amet, tristique tincidunt nisi. In hac habitasse platea dictumst. Pellentesque et diam finibus, rhoncus diam non, vulputate arcu. Praesent non tincidunt diam. Pellentesque et diam id urna scelerisque sagittis. In condimentum, quam eu ullamcorper mattis, nibh enim auctor tortor, at mattis lorem quam vel urna. Proin ultrices arcu tellus, ac aliquam nunc bibendum a. Curabitur a neque ac nisi luctus elementum. Ut sollicitudin arcu sit amet pellentesque mattis. Nunc scelerisque metus vitae porta molestie.</p>
