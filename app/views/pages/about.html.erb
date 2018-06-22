@@ -3,11 +3,51 @@
 		<h1>About Me</h1>
 		<hr>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<%= image_tag "cap_logo.png", width: 300, alt: "Profile Image" %>
 			</div>
-			<div class="col-md-8">
-				<p>Going a little more in details about who I am.</p>
+			<div class="col-md-7">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est velit, placerat eu augue sit amet, tristique tincidunt nisi. In hac habitasse platea dictumst. Pellentesque et diam finibus, rhoncus diam non, vulputate arcu. Praesent non tincidunt diam. Pellentesque et diam id urna scelerisque sagittis. In condimentum, quam eu ullamcorper mattis, nibh enim auctor tortor, at mattis lorem quam vel urna. Proin ultrices arcu tellus, ac aliquam nunc bibendum a. Curabitur a neque ac nisi luctus elementum. Ut sollicitudin arcu sit amet pellentesque mattis. Nunc scelerisque metus vitae porta molestie.</p>
+
+				<p>Another paragraph going a little more in details about who I am. Donec egestas vel sapien sed congue. Phasellus nibh metus, fringilla ut feugiat eget, egestas a eros. Nullam iaculis dui id est malesuada facilisis. Suspendisse viverra sollicitudin lectus vel porttitor.</p>
+
+				<p>
+					<button 
+						class="btn btn-secondary"
+						type="button"
+						data-toggle="collapse"
+						data-target="#jobHistory"
+						aria-expanded="false"
+						aria-controler="jobHistory"
+						>
+						Job History
+					</button>
+					<button 
+						class="btn btn-secondary"
+						type="button"
+						data-toggle="collapse"
+						data-target="#education"
+						aria-expanded="false"
+						aria-controler="education"
+						>
+						Education
+					</button>
+				</p>
+				<p>
+					<div class="collapse" id="jobHistory">
+						<div class="card card-block">
+							Job 1
+						</div>
+					</div>
+					<div class="collapse" id="education">
+						<div class="card card-block">
+							School 2
+						</div>
+						<div class="card card-block">
+							School 3
+						</div>
+					</div>
+				</p>
 			</div>
 		</div>
 	</div>
