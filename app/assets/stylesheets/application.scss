@@ -226,3 +226,16 @@ body {
 .tech-news > .card {
   padding: 25px;
 }
+
+.app-card-container {
+  color: white;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background: rgba($black, 0.2);
+}
+
+.profile-img {
+  border: 0px solid grey;
+}
