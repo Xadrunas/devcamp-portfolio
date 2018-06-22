@@ -27,15 +27,35 @@ a:hover {
  * Base structure
  */
 
+@font-face {
+  font-family: 'Montserrat';
+  src:font-url('Montserrat-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:font-url('RobotoSlab-Regular.ttf')
+}
+
 html,
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -225,4 +245,29 @@ body {
 
 .tech-news > .card {
   padding: 25px;
+}
+
+.app-card-container {
+  color: white;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background: rgba($black, 0.2);
+}
+
+.profile-img {
+  border: 0px solid grey;
+}
+
+.card-block {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
